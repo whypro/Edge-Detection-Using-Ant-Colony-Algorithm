@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLActivityDiagram1">
+  <activityRootModelMoniker Id="175bf1b1-b1e8-47d9-be51-571bdad6e79f" />
+  <nestedChildShapes>
+    <objectNodeShape Id="19e59053-d55b-4f7c-8601-32a5e308ce4c" absoluteBounds="0.5, 0.75, 1.125, 0.375" customColor="White">
+      <objectNodeMoniker Id="9422e9ac-3ae2-41a3-aeb9-0247cbd53eca" LastKnownName="原始图像" />
+    </objectNodeShape>
+    <objectNodeShape Id="a60ac5c6-77d3-4dd2-9862-c4262005d0d6" absoluteBounds="2.5, 0.75, 1.125, 0.375" customColor="White">
+      <objectNodeMoniker Id="e22b6b20-253c-4479-a6b5-6c1f47a1f759" LastKnownName="灰度图像" />
+    </objectNodeShape>
+    <objectFlowConnector edgePoints="[(1.625 : 0.9375); (2.5 : 0.9375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="0ab3454b-1aa4-4d8f-969f-fa7cf0aac153" />
+      <relativeChildShapes />
+      <nodes>
+        <objectNodeShapeMoniker Id="19e59053-d55b-4f7c-8601-32a5e308ce4c" />
+        <objectNodeShapeMoniker Id="a60ac5c6-77d3-4dd2-9862-c4262005d0d6" />
+      </nodes>
+    </objectFlowConnector>
+    <objectNodeShape Id="c1cbc274-bbd4-4705-b9e4-c8ca193ad2a4" absoluteBounds="5.375, 0.75, 1.125, 0.375" customColor="White">
+      <objectNodeMoniker Id="fc93e232-9a7b-432a-8ff7-4a55f46d0028" LastKnownName="预处理后的图像" />
+    </objectNodeShape>
+    <objectFlowConnector edgePoints="[(3.625 : 0.9375); (5.375 : 0.9375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="4afea177-de09-45a0-ae0d-27d0357d1732" />
+      <relativeChildShapes />
+      <nodes>
+        <objectNodeShapeMoniker Id="a60ac5c6-77d3-4dd2-9862-c4262005d0d6" />
+        <objectNodeShapeMoniker Id="c1cbc274-bbd4-4705-b9e4-c8ca193ad2a4" />
+      </nodes>
+    </objectFlowConnector>
+    <objectNodeShape Id="04f4b43d-e29a-4921-bff9-0ba17242e5bc" absoluteBounds="5.375, 1.625, 1.125, 0.375" customColor="White">
+      <objectNodeMoniker Id="41bc9d96-3374-4322-8b5d-9145547deaef" LastKnownName="蚁群算法后的图像" />
+    </objectNodeShape>
+    <objectFlowConnector edgePoints="[(5.9375 : 1.125); (5.9375 : 1.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="9707b084-be8a-475a-af0d-26e14727e239" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="5.1875, 1.25, 0.6875, 0.16666666666666666" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <objectNodeShapeMoniker Id="c1cbc274-bbd4-4705-b9e4-c8ca193ad2a4" />
+        <objectNodeShapeMoniker Id="04f4b43d-e29a-4921-bff9-0ba17242e5bc" />
+      </nodes>
+    </objectFlowConnector>
+    <objectNodeShape Id="6ecd613f-d763-4d77-b001-6636c4d7c1bd" absoluteBounds="2.5, 1.625, 1.125, 0.375" customColor="White">
+      <objectNodeMoniker Id="a4ea5606-88a6-40c1-adb2-20acc478bd0d" LastKnownName="阈值化后的图像" />
+    </objectNodeShape>
+    <objectNodeShape Id="7c41bf00-2679-4ac6-acfc-e276afb1d111" absoluteBounds="0.5, 1.625, 1.125, 0.375" customColor="White">
+      <objectNodeMoniker Id="dad9a451-8a69-405e-a6db-17ee3045077c" LastKnownName="最终图像" />
+    </objectNodeShape>
+    <objectFlowConnector edgePoints="[(5.375 : 1.8125); (3.625 : 1.8125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="98b85244-8d8e-4956-83e9-c2406fd8bd7f" />
+      <relativeChildShapes />
+      <nodes>
+        <objectNodeShapeMoniker Id="04f4b43d-e29a-4921-bff9-0ba17242e5bc" />
+        <objectNodeShapeMoniker Id="6ecd613f-d763-4d77-b001-6636c4d7c1bd" />
+      </nodes>
+    </objectFlowConnector>
+    <objectFlowConnector edgePoints="[(2.5 : 1.8125); (1.625 : 1.8125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="3f45b424-0feb-4e02-a0bb-cc46c3d7b828" />
+      <relativeChildShapes />
+      <nodes>
+        <objectNodeShapeMoniker Id="6ecd613f-d763-4d77-b001-6636c4d7c1bd" />
+        <objectNodeShapeMoniker Id="7c41bf00-2679-4ac6-acfc-e276afb1d111" />
+      </nodes>
+    </objectFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

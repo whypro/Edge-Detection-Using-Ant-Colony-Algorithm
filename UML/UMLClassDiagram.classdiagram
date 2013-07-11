@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="2d8b712e-97fe-435a-a5c8-de764f5de45e" linkedPackageId="7f0a8fa5-094c-49cd-bad4-95275f40b672" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ea497f33-6452-47ca-b6d8-4cab68d72bd0" name="CWImage" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="41048c49-1f12-4339-b6e8-05c33cce9f27" />
+        <targetEnds>
+          <association Id="e240907d-64bd-45ea-a3e3-ad4f7721a138" isDerived="false" sourceEndRoleName="CWImage" targetEndRoleName="IplImage" isLeaf="false" isAbstract="false">
+            <classMoniker Id="735c362d-140a-418b-8b19-5d6a1f4bf7b6" LastKnownName="IplImage" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d37b1cfb-ae92-4fe9-97b7-9cbbe3e9231a" name="CWImage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9659e359-045b-485d-9a86-8fbe6f0c3327" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="beb195d0-2545-4ab0-9751-52675d2d3cad" name="IplImage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="f4b4bc78-80e3-4e7e-815d-d1f5557cac3c" name="Lower" value="*">
+                      <elementDefinition Id="dbc03b6a-78b7-442d-b844-47c76aa15e9d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="0f269dc6-722d-48c1-9fe7-5e36a083d917" name="Upper" value="*">
+                      <elementDefinition Id="e7ff773e-1691-4447-b397-cd754fb241a0" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="729ec8d1-f00b-494a-ac09-3c6970fa21a1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3c90666a-5569-4452-bfb7-7f72313d55c8" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="de49ce37-fd92-456a-9798-960c0721ea90" name="CWPoint" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8ac67159-5cda-4125-a467-309307b4a7a9" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1d6a46a9-c36b-47dd-b539-a34e543bc1a9" name="CWVector" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="58072a9c-b13b-4d26-b302-3deb162f0655" />
+        <generalsInternal>
+          <generalization Id="f3a83088-4fa6-4369-b0d0-b8b5ddf030e9" isSubstitutable="false">
+            <classMoniker Id="de49ce37-fd92-456a-9798-960c0721ea90" LastKnownName="CWPoint" />
+            <elementDefinition Id="845cfb70-7993-4f09-9c96-7addc7e72046" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1c9756c2-8ae5-4e40-ab15-7e56e5d2a1ed" name="CAntColony" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f1ba8697-0889-40a7-b32f-d42634b5c589" />
+        <targetEnds>
+          <association Id="47f76072-1509-4338-abb5-5f879dba69aa" isDerived="false" sourceEndRoleName="CAntColony" targetEndRoleName="CAnt" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9c6ac855-a42e-4021-8f09-87960d2885e2" LastKnownName="CAnt" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0ba80649-d32b-449b-9dbd-0c277f4a8e1b" name="CAntColony" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8dac52f3-32b0-4c3f-95c3-f3040e1f3078" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b9238993-57f7-43a0-9eab-0a5b0ca5525d" name="CAnt" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="0cf729c8-ebc8-4c72-95d5-d649154b65b9" name="Lower" value="*">
+                      <elementDefinition Id="29c404cd-5f86-429d-b627-f557aaeeefb6" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3731015c-7bef-441e-a15f-6417d8debcbd" name="Upper" value="*">
+                      <elementDefinition Id="14b2fbf7-82dc-40e4-ab5a-7bae856cf590" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="011bff3b-8dff-48b4-968b-e447f0283a92" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c2516cce-7661-41fc-9646-4ee937b16fa1" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9c6ac855-a42e-4021-8f09-87960d2885e2" name="CAnt" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6c9cb579-6a83-4874-98e7-06cc29e88bb6" />
+        <suppliersInternal>
+          <dependency Id="3571f453-da39-45e3-b8d9-0dbbb7c59663">
+            <classMoniker Id="1c9756c2-8ae5-4e40-ab15-7e56e5d2a1ed" LastKnownName="CAntColony" />
+            <elementDefinition Id="709ecc96-6746-405d-bbba-32178c0a7a5d" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="ab1d6c2a-e66f-4a99-a729-d51db0200eb0" isDerived="false" sourceEndRoleName="CAnt" targetEndRoleName="CWPoint" isLeaf="false" isAbstract="false">
+            <classMoniker Id="de49ce37-fd92-456a-9798-960c0721ea90" LastKnownName="CWPoint" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="199907ea-f62d-4733-9090-1ce36dee0766" name="CAnt" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1bdd50ba-9c41-47aa-94bd-4e2134dc1cde" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc675505-d375-4b9f-afeb-b1416db26600" name="CWPoint" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="21f8ed03-983a-4879-bb3e-56feaa1047de" name="Lower" value="*">
+                      <elementDefinition Id="8f44266c-bc8e-460a-a17e-ef90f48fea7e" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4faf6733-3719-49ab-b0c5-fa5e4ed19cff" name="Upper" value="*">
+                      <elementDefinition Id="2cda20d9-c5e3-4f87-b09a-f9ba4598a451" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="f1d523ca-dac3-4690-80dd-a5f89bef69de" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="911add4c-efd3-42a7-a616-1355c87c358a" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0b27b76d-ea8f-408d-a243-69b38ac69224" name="CImageProcessingDlg" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="db114c31-52de-458d-a0e0-e15772a5cfc8" />
+        <targetEnds>
+          <association Id="221ff7c2-ae22-4954-83e0-1a3e9fac776f" isDerived="false" sourceEndRoleName="CImageProcessingDlg" targetEndRoleName="CWImage" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ea497f33-6452-47ca-b6d8-4cab68d72bd0" LastKnownName="CWImage" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43694f89-3946-40b4-a65e-a9a7243913e8" name="CImageProcessingDlg" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cc0d86d9-f4e9-42a7-bcef-15f3b828e59b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d7785bc5-8451-4798-8c84-304be53063bf" name="CWImage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eca357ae-e65c-4188-bb7e-f9b3954cdf3b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b2e264ca-6d9e-41b5-ac6d-84f5d5b1d6f0" />
+          </association>
+          <association Id="b68f2eec-22d3-486c-a529-79a29efd13b9" isDerived="false" sourceEndRoleName="CImageProcessingDlg" targetEndRoleName="CAntColony" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1c9756c2-8ae5-4e40-ab15-7e56e5d2a1ed" LastKnownName="CAntColony" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6318f827-3716-4921-8c28-33669d0da752" name="CImageProcessingDlg" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3510da1e-6105-45a4-a00c-6e7cb70c0535" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a2f6414d-8479-4ff1-87a7-8bbda6fa8803" name="CAntColony" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b2dc7147-dd46-4ccb-8a6f-6f39cb82e80d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cb67e321-754b-403d-bef0-6a15330796e8" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="735c362d-140a-418b-8b19-5d6a1f4bf7b6" name="IplImage" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ba08c51c-1184-4435-8d8f-b435cedbd23d" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="7f0a8fa5-094c-49cd-bad4-95275f40b672" name="UML">
+    <elementDefinition Id="d435f447-ffe0-47c5-ab98-28df7e96ff39" />
+    <profileInstances>
+      <packageHasProfileInstances Id="36c1b83e-6f0b-49b8-ba17-21e957fdcd75">
+        <profileInstance Id="b8f80cb1-fdf5-413c-91c1-82ee8e88e569" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6cb7a048-e625-4e1d-ab68-48bd6ebcb417">
+        <profileInstance Id="ddd81a3e-a8e4-47fd-918f-7db3caf0fdfc" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

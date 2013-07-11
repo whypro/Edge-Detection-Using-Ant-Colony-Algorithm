@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="175bf1b1-b1e8-47d9-be51-571bdad6e79f" name="Activity1" linkedPackageId="034f1268-ccaf-436a-b59f-1678fdf37db0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="a052513a-4605-47bb-981b-613005dcf81f">
+      <profileInstance Id="c79409bf-aef1-476f-b89a-13ecbe4188fa" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4aaafe09-5720-41f8-857a-6a3c62baa8e9">
+      <profileInstance Id="e1ece101-1859-4384-a5d4-77f2363abdca" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="c5a24337-e4f6-487b-9147-0163fad968ed" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="5904de96-6a97-4098-9c94-b685f2bce4db" />
+        <nodes>
+          <objectNode Id="9422e9ac-3ae2-41a3-aeb9-0247cbd53eca" name="原始图像" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="73e96ece-f123-4c6e-95a6-b0cda7a4fac2" />
+            <objectFlowTargets>
+              <objectFlow Id="0ab3454b-1aa4-4d8f-969f-fa7cf0aac153" guard="灰度化" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="e22b6b20-253c-4479-a6b5-6c1f47a1f759" LastKnownName="灰度图像" />
+                <elementDefinition Id="5f09ed41-d639-4f3b-b442-b5fd45e81aba" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="5cff505d-b896-4664-ab37-cd5772a63749" name="2147483647" value="2147483647">
+                <elementDefinition Id="97883bc9-852e-477b-b2b6-e1babf0e3e57" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="e22b6b20-253c-4479-a6b5-6c1f47a1f759" name="灰度图像" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="ba0c761d-9548-4ae7-a7af-69a935decd64" />
+            <objectFlowTargets>
+              <objectFlow Id="4afea177-de09-45a0-ae0d-27d0357d1732" guard="使用微分算子进行预处理" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="fc93e232-9a7b-432a-8ff7-4a55f46d0028" LastKnownName="预处理后的图像" />
+                <elementDefinition Id="5890470c-0ded-4d78-8c0f-571f63db67b1" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="571fc4d3-3c9d-4040-b4bf-12ab72d3847c" name="2147483647" value="2147483647">
+                <elementDefinition Id="82877608-fcab-4c47-b892-4c6045bbaaa3" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="fc93e232-9a7b-432a-8ff7-4a55f46d0028" name="预处理后的图像" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="51f44ae8-a5a3-4523-a33d-ac52241faf8e" />
+            <objectFlowTargets>
+              <objectFlow Id="9707b084-be8a-475a-af0d-26e14727e239" guard="蚁群算法" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="41bc9d96-3374-4322-8b5d-9145547deaef" LastKnownName="蚁群算法后的图像" />
+                <elementDefinition Id="30cb86d3-45ad-4c4f-91d3-777de26e6038" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="b70b3c0a-063e-4ff5-825e-ef12447e2542" name="2147483647" value="2147483647">
+                <elementDefinition Id="07f4ba1e-ad2d-4865-b01e-a3732658a869" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="41bc9d96-3374-4322-8b5d-9145547deaef" name="蚁群算法后的图像" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="580427a2-07d6-4057-946e-4971ef245e72" />
+            <objectFlowTargets>
+              <objectFlow Id="98b85244-8d8e-4956-83e9-c2406fd8bd7f" guard="阈值化" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="a4ea5606-88a6-40c1-adb2-20acc478bd0d" LastKnownName="阈值化后的图像" />
+                <elementDefinition Id="ba8f16e9-a550-4168-b839-8b5a657e2b46" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="fbc8c149-bc9d-4408-96c9-4e9f8b715a8a" name="2147483647" value="2147483647">
+                <elementDefinition Id="6b9d0190-6424-4f75-bca2-4f65d8096edb" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="a4ea5606-88a6-40c1-adb2-20acc478bd0d" name="阈值化后的图像" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="f45808fc-c27a-44a2-a05e-da3743c172a8" />
+            <objectFlowTargets>
+              <objectFlow Id="3f45b424-0feb-4e02-a0bb-cc46c3d7b828" guard="细化" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="dad9a451-8a69-405e-a6db-17ee3045077c" LastKnownName="最终图像" />
+                <elementDefinition Id="5be88219-5f47-4390-b050-e1449bcfb55d" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="3569bc4b-ba15-4c79-ab8f-1991e5e456c1" name="2147483647" value="2147483647">
+                <elementDefinition Id="962447ed-aaca-41b1-898f-15ed29c5e998" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="dad9a451-8a69-405e-a6db-17ee3045077c" name="最终图像" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="7a8efcc0-b949-4cb3-8903-b29196b1cb56" />
+            <upperBound>
+              <literalInteger Id="739ba5fb-f58e-4a53-bd09-64982181f566" name="2147483647" value="2147483647">
+                <elementDefinition Id="7fb3a139-0390-454c-a650-7bace1086d0c" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="034f1268-ccaf-436a-b59f-1678fdf37db0" name="UML">
+    <elementDefinition Id="d435f447-ffe0-47c5-ab98-28df7e96ff39" />
+  </package>
+</activityRootModel>
