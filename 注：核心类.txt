@@ -1,4 +1,0 @@
-CWImage
-CAntColony
-CAnt
-CImage ProcessingDlg
